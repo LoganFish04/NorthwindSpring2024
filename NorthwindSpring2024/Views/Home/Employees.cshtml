@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<table border="1">
+
+    <tr>
+        <th> Employee Id </th>
+        <th> Last Name </th>
+        <th> First Name </th>
+        <th> Title </th>
+        <th> Title Of Courtesy </th>
+        <th> Birth Date </th>
+        <th> Hire Date </th>
+        <th> Address </th>
+        <th> City </th>
+        <th> Region </th>
+        <th> Postal Code </th>
+        <th> Country </th>
+        <th> Phone Number </th>
+        <th> Phone Extension </th>
+        <th> Notes </th>
+        <th> Reports To </th>
+    </tr>
+    
+    @foreach (var p in ViewBag.ListOfEmployees)
+    {
+        <tr>
+            <td> @p.EmployeeId </td>
+            <td> @p.LastName </td>
+            <td> @p.FirstName </td>
+            <td> @p.Title </td>
+            <td> @p.TitleOfCourtesy </td>
+            <td> @p.BirthDate </td>
+            <td> @p.HireDate </td>
+            <td> @p.Address </td>
+            <td> @p.City </td>
+            <td> @p.Region </td>
+            <td> @p.PostalCode </td>
+            <td> @p.Country </td>
+            <td> @p.HomePhone </td>
+            <td> @p.PhoneExtension </td>
+            <td> @p.Notes </td>
+            <td> @p.ReportsTo </td>
+        </tr>
+    }
+
+</table>

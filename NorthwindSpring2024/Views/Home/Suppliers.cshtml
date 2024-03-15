@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<table border="1">
+
+    <tr>
+        <th> Supplier Id </th>
+        <th> Company Name </th>
+        <th> Contact Name </th>
+        <th> Contact Title </th>
+        <th> Address </th>
+        <th> City </th>
+        <th> Region </th>
+        <th> Postal Code </th>
+        <th> Country </th>
+        <th> Phone Number </th>
+        <th> Fax Number </th>
+        <th> Homepage Url </th>
+    </tr>
+
+    @foreach (var p in ViewBag.ListOfSuppliers)
+    {
+        <tr>
+            <td> @p.SupplierId </td>
+            <td> @p.CompanyName </td>
+            <td> @p.ContactName </td>
+            <td> @p.ContactTitle </td>
+            <td> @p.Address </td>
+            <td> @p.City </td>
+            <td> @p.Region </td>
+            <td> @p.PostalCode </td>
+            <td> @p.Country </td>
+            <td> @p.Phone </td>
+            <td> @p.Fax </td>
+            <td> @p.HomePage </td>
+        </tr>
+    }
+
+</table>
